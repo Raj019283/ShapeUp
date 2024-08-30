@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeUp Diet Plan</title>
+    <link rel="stylesheet" href="diet-plan.css">
+</head>
+<body>
+    <header>
+        <h1 class="hide">Customize Your Diet Plan</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="calories-section">
+                <p>Your suggested daily calorie intake is: <span id="calories"></span> kcal</p>
+                <p>You need to workout 5-6 days a week.</p>
+            </div>
+
+            <div class="diet-selection">
+                <h2>Select Your Diet Preference</h2>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="diet" value="veg" required> Vegetarian
+                    </label>
+                    <label>
+                        <input type="radio" name="diet" value="non-veg" required> Non-Vegetarian
+                    </label>
+                </div>
+                <button id="createDietButton">Create Your Diet Plan</button>
+                <button id="createWorkoutButton">Create Your Workout Plan</button>
+            </div>
+        </div>
+
+        <div id="todoDiet" class="todo-list hide">
+            <h2>Customize Your Food Items</h2>
+            <input type="text" id="foodInput" placeholder="Enter food item">
+            <button id="addFoodButton">Add Food</button>
+            <ul id="foodList"></ul>
+        </div>
+
+        <div id="todoWorkout" class="todo-list hide">
+            <h2>Customize Your Workout Plan</h2>
+            <input type="text" id="workoutInput" placeholder="Enter workout exercise">
+            <button id="addWorkoutButton">Add Exercise</button>
+            <ul id="workoutList"></ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="diet-plan.js"></script>
+</body>
+</html>
